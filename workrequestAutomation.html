@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Tabular Data Entry</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Lora:wght@600&family=Noticia+Text&display=swap" rel="stylesheet">
+
+   </head>
+   <body>
+	<div class="heading-section">
+      <h1>WR Automation</h1>
+  </div>
+  <div class="form-section">
+
+
+
+	<table id="form-table-1">
+	<td>
+	<div class="pad1">
+         <div class="first">
+            <table>
+               <tr>
+                  <td id="des">Serial No</td>
+                  <td><label for="sno"></label><input type="text" id="sno"></td>
+               </tr>
+               <tr>
+                  <td id="des">WR#</td>
+                  <td><label for="wr"></label><input type="text" id="wr"></td>
+               </tr>
+               <tr>
+                  <td id="des">Description</td>
+                  <td><label for="desc"></label><input type="text" id="desc"></td>
+               </tr>
+               <tr>
+                  <td id="des">Release Name</td>
+                  <td><label for="relname"></label><input type="text" id="relname"></td>
+               </tr>
+               <tr>
+                  <td id="des">Infa Folder</td>
+                  <td><label for="infa"></label><input type="text" id="infa"></td>
+               </tr>
+               <tr>
+                  <td id="des">Application Name</td>
+                  <td><label for="appname"></label><input type="text" id="appname"></td>
+               </tr>
+            </table>
+         </div>
+	</div>
+	</td>
+	<td>
+	<div class="pad2">
+         <div class="second">
+            <table>
+               <tr>
+                  <td id="des">New/Existing</td>
+                  <td><label for="newexi"></label><input type="text" id="newexi"></td>
+               </tr>
+               <tr>
+                  <td id="des">Development Onsite POC</td>
+                  <td><label for="devon"></label><input type="text" id="devon"></td>
+               </tr>
+               <tr>
+                  <td id="des">Development Offshore POC</td>
+                  <td><label for="devoff"></label><input type="text" id="devoff"></td>
+               </tr>
+               <tr>
+                  <td id="des">BSA</td>
+                  <td><label for="bsa"></label><input type="text" id="bsa"></td>
+               </tr>
+               <tr>
+                  <td id="des">Support Onsite POC</td>
+                  <td><label for="sonp"></label><input type="text" id="sonp"></td>
+               </tr>
+               <tr>
+                  <td id="des">Support offshore POC</td>
+                  <td><label for="sofp"></label><input type="text" id="sofp"></td>
+               </tr>
+            </table>
+         </div>
+	</div>
+	</td>
+	<td>
+	<div class="pad3">
+	   <div class="third">
+         	<table>
+               <tr>
+                  <td id="des">Prod Team - KT Status</td>
+                  <td><select id="prod">
+               		<option selected value="">Select</option>
+               		<option value="Completed">Completed</option>
+               		<option value="Pending">Pending</option>
+            	    </select>
+         		</td>
+               </tr>
+		   <tr>
+			<td id="des">KT Starting Date</td>
+			<td><label for="ktsdate"></label><input type="date" id="ktsdate"></td>
+		   </tr>
+		   <tr>
+			<td id="des">KT Completion Date</td>
+			<td><label for="ktcdate"></label><input type="date" id="ktcdate"></td>
+		   </tr>
+		   <tr>
+			<td id="des">ICoE Vender details</td>
+			<td><select id="icoev">
+               		<option selected value="">Select</option>
+               		<option value="Completed">Completed</option>
+               		<option value="Pending">Pending</option>
+            	    </select>
+         		</td>
+		    </tr>
+		    <tr>
+			<td id="des">EDW/HDH/IDS usage</td>
+			<td><select id="ehi">
+               		<option selected value="">Select</option>
+               		<option value="Completed">Completed</option>
+               		<option value="Pending">Pending</option>
+            	    </select>
+         		</td>
+		    </tr>
+		    <tr>
+			<td id="des">Tivoli and bussiness Row</td>
+			<td><select id="tbr">
+               		<option selected value="">Select</option>
+              		<option value="Completed">Completed</option>
+               		<option value="Pending">Pending</option>
+            		</select>
+			</td>
+		    </tr>
+		</table>
+	</div>
+	</div>
+	</td>
+	
+	</table>
+	<p>
+	</div>
+	<div>
+	<table id="form-table-2">
+	<td>
+	<div class="pad4">
+	<div class="forth">
+		<table>
+			<tr>
+				<td id="des">Prod support DOC</td><td><select id="hpsd">
+				<option selected value="">Select</option>
+				<option value="Completed">Completed</option>
+				<option value="Pending">Pending</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td id="des">Runbooks</td>
+				<td><select id="run">
+               			<option selected value="">Select</option>
+               			<option value="Completed">Completed</option>
+               			<option value="Pending">Pending</option>
+            			</select></td>
+			</tr>
+			<tr>
+				<td id="des">SOPs</td>
+				<td><select id="sop">
+               			<option selected value="">Select</option>
+               			<option value="Completed">Completed</option>
+               			<option value="Pending">Pending</option>
+            			</select>
+				</td>
+			</tr>
+			<tr>
+				<td id="des">ICoE Static Lookup Sheet</td>
+				<td><select id="isls">
+               			<option selected value="">Select</option>
+               			<option value="Completed">Completed</option>
+               			<option value="Pending">Pending</option>
+            			</select>
+		   		</td>
+			</tr>
+			<tr>
+				<td id="des">First Prod run Date</td>
+				<td><label for="fprd"></label><input type="date" id="fprd"></td>
+			</tr>
+			<tr>
+				<td id="des">First Run Validated</td>
+				<td><label for="frv"></label><input type="date" id="frv"></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	</td>
+	<td>
+	<div class="pad5">
+	<div class="fifth">
+		<table>
+			<tr>
+				<td id="des">Job cycle (Daily/weekly/monthly)</td>
+				<td><label for="jc"></label><input type="text" id="jc"></td>
+			</tr>
+			<tr>
+				<td>Expected record count</td>
+				<td><label for="erc"></label><input type="text" id="erc"></td>
+			</tr>
+			<tr>
+				<td id="des">Actual record Count</td>
+				<td><label for="arc"></label><input type="text" id="arc"></td>
+			</tr>
+			<tr>
+				<td id="des">Change working as expected</td>
+				<td><label for="cwe"></label><input type="text" id="cwe"></td>
+			</tr>
+			<tr>
+				<td id="des">LCBF Implemented</td>
+				<td><label for="lcbfi"></label><input type="text" id="lcbfi"></td>
+			</tr>
+			<tr>
+				<td id="des">LCBF Validated</td>
+				<td><label for="lcbfv"></label><input type="text" id="lcbfv"></td>
+			</tr>
+		</table>
+	</div>
+	</div>
+	</td>
+	</table">
+	</p>
+	</div>
+	<div>
+	<div claSS="pad6">
+	<table>
+		<tr>
+			<td>
+
+   				<textarea id="com" name="com" id="com" placeholder="Comment" style="height: 100px;"></textarea>
+			</td>
+		</tr>
+	</table>
+  	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	<div class="pad7">
+      	<button style="border:2px solid green; background-color: green; color: white" type="button"  onclick="addRow()">Save</button>
+      	<button style="border:2px solid red; background-color: red;  color: white" type="button" onclick="DeleteFunction()">Delete</button>
+	<button style="border:2px solid #0079FF; background-color: #0079FF; color: white" type="button" onclick="downloadCSV()">Submit</button>
+	<!--<button style="border:2px solid #FFA500; background-color: #FFA500; color: white" type="button">Upload</button>-->
+	
+	</div>
+
+
+      <div class="data">
+      <table id="data-table" border=1>
+         <thead>
+            <tr>
+               <th>Serial No</th>
+               <th>WR</th>
+               <th>Description</th>
+               <th>Release Name</th>
+               <th>Infa Folder</th>
+               <th>Application Name</th>
+               <th>New/Existing</th>
+               <th>Dev onsite POC</th>
+               <th>Dev offshore POC</th>
+               <th>BSA</th>
+               <th>Support Onsite POC</th>
+               <th>Support offshore POC</th>
+               <th>Prod Team - KT Status</th>
+               <th>KT Sheduled Date</th>
+               <th>KT Completion Date</th>
+               <th>ICoE Vender details</th>
+               <th>EDW/HDH/IDS usage</th>
+               <th>Tivoli and bussiness Row</th>
+               <th>Prod support DOC</th>
+               <th>Runbooks</th>
+               <th>SOPs</th>
+               <th>ICoE Static Lookup Sheet</th>
+               <th>First Prod run Date</th>
+               <th>First Run Validated</th>
+               <th>Job cycle (Daily/weekly/monthly)</th>
+               <th>Expected record count</th>
+               <th>Actual record Count</th>
+               <th>Change working as expected</th>
+               <th>LCBF Implemented</th>
+               <th>LCBF Validated</th>
+               <th>Comments</th>
+            </tr>
+         </thead>
+         <tbody>
+
+         </tbody>
+
+
+      </table>
+	</div>
+
+
+	<p id="copy">©Souhatrdya Sarkar</p>
+
+
+
+      <script>
+
+         function downloadCSV() {
+           const rows = [];
+           const tableHeaders = [];
+           const table = document.getElementById('data-table');
+
+
+
+           // Add table headers to the rows array
+           rows.push(tableHeaders.join(','));
+
+
+
+           // Loop through all table rows
+           for (let i = 0; i < table.rows.length; i++) {
+             const cells = table.rows[i].cells;
+             const row = [];
+
+
+
+             // Loop through all table cells in the current row
+             for (let j = 0; j < cells.length; j++) {
+               row.push(cells[j].innerText);
+             }
+
+
+
+             // Join the row array into a comma-separated string and push to the rows arrayś
+             rows.push(row.join(','));
+           }
+
+
+
+           // Join the rows array into a string with newline characters and create a Blob object
+           const csvData = new Blob([rows.join('\n')], { type: 'text/csv' });
+
+
+
+           // Create a new anchor element with a download attribute and click it to download the CSV file
+           const link = document.createElement('a');
+           link.href = window.URL.createObjectURL(csvData);
+           link.setAttribute('download', 'demo.csv');
+
+
+
+           // Check if the file exists and append or create as needed
+           const existingFile = localStorage.getItem('demo.csv');
+           if (existingFile) {
+             const appendedFile = existingFile + rows.join('\n');
+             localStorage.setItem('data.csv', appendedFile);
+           } else {
+             localStorage.setItem('demo.csv', rows.join('\n'));
+           }
+
+
+
+           link.click();
+         }
+	   
+
+
+
+
+
+         function addRow() {
+           let table = document.getElementById("data-table");
+           let row = table.insertRow();
+           let sno = row.insertCell(0);
+           let wr = row.insertCell(1);
+           let desc = row.insertCell(2);
+           let relname = row.insertCell(3);
+           let infa = row.insertCell(4);
+           let appname = row.insertCell(5);
+           let newexi = row.insertCell(6);
+           let devon = row.insertCell(7);
+           let devoff = row.insertCell(8);
+           let bsa = row.insertCell(9);
+           let sonp = row.insertCell(10);
+           let sofp = row.insertCell(11);
+           let prod = row.insertCell(12);
+           let ktsdate = row.insertCell(13);
+           let ktcdate = row.insertCell(14);
+           let icoev = row.insertCell(15);
+           let ehi = row.insertCell(16);
+           let tbr = row.insertCell(17);
+           let hpsd = row.insertCell(18);
+           let run = row.insertCell(19);
+           let sop = row.insertCell(20);
+
+
+
+           let isls = row.insertCell(21);
+           let fprd = row.insertCell(22);
+           let frv = row.insertCell(23);
+           let jc = row.insertCell(24);
+           let erc = row.insertCell(25);
+           let arc = row.insertCell(26);
+           let cwe = row.insertCell(27);
+           let lcbfi = row.insertCell(28);
+           let lcbfv = row.insertCell(29);
+           let com = row.insertCell(30);
+
+
+
+
+
+
+
+           	sno.innerHTML = document.getElementById("sno").value;
+           	wr.innerHTML = document.getElementById("wr").value;
+           	desc.innerHTML = document.getElementById("desc").value;
+           	relname.innerHTML = document.getElementById("relname").value;
+           	infa.innerHTML = document.getElementById("infa").value;
+           	appname.innerHTML = document.getElementById("appname").value;
+           	newexi.innerHTML = document.getElementById("newexi").value;
+           	devon.innerHTML = document.getElementById("devon").value;
+           	devoff.innerHTML = document.getElementById("devoff").value;
+		bsa.innerHTML = document.getElementById("bsa").value;
+		sonp.innerHTML = document.getElementById("sonp").value;
+		sofp.innerHTML = document.getElementById("sofp").value;
+		prod.innerHTML = document.getElementById("prod").value;
+		ktsdate.innerHTML = document.getElementById("ktsdate").value;
+		ktcdate.innerHTML = document.getElementById("ktcdate").value;
+		icoev.innerHTML = document.getElementById("icoev").value;
+		ehi.innerHTML = document.getElementById("ehi").value;
+		tbr.innerHTML = document.getElementById("tbr").value;
+		hpsd.innerHTML = document.getElementById("hpsd").value;
+		run.innerHTML = document.getElementById("run").value;
+		sop.innerHTML = document.getElementById("sop").value;
+		isls.innerHTML = document.getElementById("isls").value;
+		fprd.innerHTML = document.getElementById("fprd").value;
+		frv.innerHTML = document.getElementById("frv").value;
+		jc.innerHTML = document.getElementById("jc").value;
+		erc.innerHTML = document.getElementById("erc").value;
+		arc.innerHTML = document.getElementById("arc").value;
+		cwe.innerHTML = document.getElementById("cwe").value;
+		lcbfi.innerHTML = document.getElementById("lcbfi").value;
+		lcbfv.innerHTML = document.getElementById("lcbfv").value;
+		com.innerHTML = document.getElementById("com").value;
+
+
+
+           	document.getElementById("sno").value = "";
+           	document.getElementById("wr").value = "";
+           	document.getElementById("desc").value = "";
+           	document.getElementById("relname").value = "";
+           	document.getElementById("infa").value = "";
+           	document.getElementById("appname").value = "";
+           	document.getElementById("newexi").value = "";
+           	document.getElementById("devon").value = "";
+           	document.getElementById("devoff").value = "";
+		document.getElementById("bsa").value = "";
+		document.getElementById("sonp").value = "";
+		document.getElementById("sofp").value = "";
+		document.getElementById("prod").value = "";
+		document.getElementById("ktsdate").value = "";
+		document.getElementById("ktcdate").value = "";
+		document.getElementById("icoev").value = "";
+		document.getElementById("ehi").value = "";
+		document.getElementById("tbr").value = "";
+		document.getElementById("hpsd").value = "";
+		document.getElementById("run").value = "";
+		document.getElementById("sop").value = "";
+		document.getElementById("isls").value = "";
+		document.getElementById("fprd").value = "";
+		document.getElementById("frv").value = "";
+		document.getElementById("jc").value = "";
+		document.getElementById("erc").value = "";
+		document.getElementById("arc").value = "";
+		document.getElementById("cwe").value = "";
+		document.getElementById("lcbfi").value = "";
+		document.getElementById("lcbfv").value = "";
+		document.getElementById("com").value = "";
+
+         }
+	   function DeleteFunction() {
+		var a=prompt("Enter the row to delete: ");
+  		document.getElementById("data-table").deleteRow(a);
+         }
+
+
+
+      </script>
+	<style>
+		
+input{
+  background-color: #FFFFFF;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+body{
+  background-color: #FFFFFF;
+}
+select{
+  background-color: #FFFFFF;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+}
+textarea{
+  background-color: #EAFDFC;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  padding: 10px 490px;
+  margin-left: 50px;
+ }
+
+h1{
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: #1E90FF;
+  font-size: 50px;
+  text-decoration: underline;
+}
+button {
+  
+  background-color: #FFFFFF; 
+  color: #000000;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+tr{
+  text-align: center;
+}
+
+table{
+  padding:inline;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px;
+}
+.heading-section{
+  background-color: #ffffff ;
+  padding: 20px 40px;
+
+}
+
+
+
+
+}
+
+
+
+#form-table-1{
+  font-family: 'Crimson Text', serif;
+  padding: 10px;
+}
+#form-table-2{
+  
+  
+}
+
+#data-table{
+
+  background-color: #BFEAF5;
+  font-family: 'Noticia Text', serif;
+  
+}
+
+#copy{
+	text-align: center;
+}
+.data{
+  padding-top:15px;
+  padding-bottom: 15px;
+}
+.first{
+	background-color: #EAFDFC;
+	border: 1px solid #11009E;
+	border-radius: 5px;
+	}
+.second{
+	background-color: #EAFDFC;
+	border: 1px solid #11009E;
+	border-radius: 5px;
+	}
+.third{
+	background-color: #EAFDFC;
+	border: 1px solid #11009E;
+	border-radius: 5px;
+}
+.forth{
+	background-color: #EAFDFC;
+	border: 1px solid #11009E;
+	border-radius: 5px;
+}
+.fifth{
+	background-color: #EAFDFC;
+	border: 1px solid #11009E;
+	border-radius: 5px;
+}
+.pad1{
+	padding-left: 50px;
+}
+.pad2{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.pad3{
+	
+}
+.pad4{
+	padding-left: 280px;
+	
+}
+.pad5{
+	padding-left: 180px;
+}
+.pad6{
+	
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.pad7{
+	padding-left: 600px;
+	padding-right: 600px;
+}
+
+</style>
+
+
+
+   </body>
+</html>
